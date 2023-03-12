@@ -1,9 +1,13 @@
-FROM python:3.11.2-slim
+FROM python:3.11.2-alpine3.17 
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt /app/
 
-CMD [ "python", "./your-daemon-or-script.py" ]
+RUN apk update \
+    && apk add --no-cache mariadb-connector-c-dev build-base \
+    && pip install --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt \
+    && apk del build-base
 
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
