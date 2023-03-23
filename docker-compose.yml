@@ -12,7 +12,6 @@ services:
     image: nginx:1.23.3
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ~/lpn/static:/static
     environment:
       SERVER_NAME: localhost
     ports:
@@ -25,7 +24,7 @@ services:
     build: ./python
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - ~/lpn:/app
+      - /home/eduargenton/eng_soft2/Let-s-Party-Now/:/app
     networks:
       - db
       - nginx
