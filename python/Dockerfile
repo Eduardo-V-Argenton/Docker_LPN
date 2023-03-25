@@ -10,4 +10,12 @@ RUN apk update \
     && pip install --no-cache-dir -r requirements.txt \
     && apk del build-base
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+ENV DJANGO_SUPERUSER_USERNAME=admin
+ENV DJANGO_SUPERUSER_EMAIL=admin@example.com
+ENV DJANGO_SUPERUSER_PASSWORD=password
+ENV DJANGO_SUPERUSER_NAME=admin
+
+COPY startup.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/startup.sh
+
+CMD ["/usr/local/bin/startup.sh"]
