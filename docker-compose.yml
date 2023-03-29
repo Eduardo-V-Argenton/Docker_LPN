@@ -23,7 +23,6 @@ services:
       - python
   python:
     build: ./python
-    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - /home/eduargenton/eng_soft2/Let-s-Party-Now/:/app
     environment:

@@ -15,7 +15,7 @@ ENV DJANGO_SUPERUSER_EMAIL=admin@example.com
 ENV DJANGO_SUPERUSER_PASSWORD=password
 ENV DJANGO_SUPERUSER_NAME=admin
 
-COPY startup.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/startup.sh
+COPY startup.sh /opt
+RUN chmod +x /opt/startup.sh
 
-CMD ["sh /usr/local/bin/startup.sh"]
+CMD ["sh", "/opt/startup.sh"]
