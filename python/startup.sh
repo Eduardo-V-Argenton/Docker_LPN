@@ -1,5 +1,6 @@
 #!/bin/bash
-sleep 3
+sleep 7
+python manage.py collectstatic --no-input
 python manage.py makemigrations
 python manage.py migrate
 
