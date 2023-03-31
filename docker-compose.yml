@@ -26,8 +26,9 @@ services:
     volumes:
       - /home/eduargenton/eng_soft2/Let-s-Party-Now/:/app
     environment:
-      TWITCH_CLIENT_ID: <insert_your_client_id>
-      TWITCH_CLIENT_SECRET: <insert_your_client_secret>
+      DJANGO_SECRET_KEY: 'custom-secret-key' 
+      TWITCH_CLIENT_ID: tfvqki3dgdall9xsq7giqyq486uevx
+      TWITCH_CLIENT_SECRET: j4g2kacq5pfi9le4eop89enjjmj1ll
     networks:
       - db
       - nginx
