@@ -7,7 +7,7 @@ Todas são nos enviroment do container python:
 - TWITCH_CLIENT_ID: ID Twitch dev
 - TWITCH_CLIENT_SECRET: Secret-Key twitch dev
 
-para obtenção do ID e Secret Key twitch siga a [documentação da twitch](https://dev.twitch.tv/docs/authentication/) e a documentação da [API do IGDB](https://api-docs.igdb.com/#account-creation)
+para obtenção do ID e Secret Key twitch siga a [documentação da twitch](https://dev.twitch.tv/docs/authentication/) e a da [API do IGDB](https://api-docs.igdb.com/#account-creation)
 
 Uma vez essas configurações feitas é apenas subir os containers.
 Recomendo o comando:
