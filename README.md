@@ -12,7 +12,7 @@ para obtenção do ID e Secret Key twitch siga a [documentação da twitch](http
 Uma vez essas configurações feitas é apenas subir os containers.
 Recomendo o comando:
 ```
-docker-compose up -d
+sudo docker-compose up -d
 ```
 Para ver logs apenas remova o -d
 
