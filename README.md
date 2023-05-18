@@ -8,7 +8,7 @@ Todas são nos enviroment do container python:
 - TWITCH_CLIENT_SECRET: Secret-Key twitch dev
 
 para obtenção do ID e Secret Key twitch siga a [documentação da twitch](https://dev.twitch.tv/docs/authentication/) e a da [API do IGDB](https://api-docs.igdb.com/#account-creation)
-
+Não esqueça de no volume do container Python alterar o mapeamento para o local correto onde se encontra os arquivos do Let's Party Now
 Uma vez essas configurações feitas é apenas subir os containers.
 Recomendo o comando:
 ```
