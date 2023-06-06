@@ -2,7 +2,7 @@ Docker usado durante o trabalho de Engenharia de Software 2
 
 # Configurações iniciais
 ### Uma vez com o docker compose instalado é necessário algumas alterações no arquivo [docker-compose.yml](https://github.com/Eduardo-V-Argenton/Docker_LPN/blob/main/docker-compose.yml).
-Todas são nos enviroment do container python:
+Todas são nos environment do container python:
 -  DJANGO_SECRET_KEY: Gere um secret-key para a aplicação
 - TWITCH_CLIENT_ID: ID Twitch dev
 - TWITCH_CLIENT_SECRET: Secret-Key twitch dev
